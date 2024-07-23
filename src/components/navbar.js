@@ -10,6 +10,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      {/* Left side: Logo */}
+      <div className="navbar-left">
+        <img src="/path/to/your/logo.png" alt="Logo" className="logo" />
+      </div>
+
+      {/* Middle: Navigation Links */}
       <ul className="nav-menu">
         <li className={`nav-item ${active === 'home' ? 'active' : ''}`}>
           <a href="#home" className="nav-link" onClick={() => handleClick('home')}>
@@ -21,17 +27,22 @@ const Navbar = () => {
             About
           </a>
         </li>
-        <li className={`nav-item ${active === 'services' ? 'active' : ''}`}>
-          <a href="#services" className="nav-link" onClick={() => handleClick('services')}>
-            Services
-          </a>
-        </li>
-        <li className={`nav-item ${active === 'contact' ? 'active' : ''}`}>
-          <a href="#contact" className="nav-link" onClick={() => handleClick('contact')}>
-            Contact
+        <li className={`nav-item ${active === 'products' ? 'active' : ''}`}>
+          <a href="#products" className="nav-link" onClick={() => handleClick('products')}>
+            Products
           </a>
         </li>
       </ul>
+
+      {/* Right side: Login and Sign Up */}
+      <div className="navbar-right">
+        <a href="#login" className="nav-link">
+          Login
+        </a>
+        <a href="#signup" className="nav-link">
+          Sign Up
+        </a>
+      </div>
     </nav>
   );
 };

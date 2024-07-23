@@ -1,6 +1,23 @@
 .navbar {
     background-color: #333;
     padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust size as per your logo */
+    height: auto;
   }
   
   .nav-menu {
@@ -27,5 +44,14 @@
   .active .nav-link {
     background-color: #555;
     border-radius: 5px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right .nav-link {
+    margin-left: 10px;
   }
   
