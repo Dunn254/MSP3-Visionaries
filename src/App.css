@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.css-fix {
+  white-space: pre-wrap; /* or pre-line */
+}
