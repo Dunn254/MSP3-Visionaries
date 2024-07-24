@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar';
+import HoverImage from './components/HoverImage';
+import ProductList from './components/ProductList';
+import Footer from './components/Footer';
 import './App.css';
 
-function App() {
+import image1 from './images/HoverGlasses1.jpg'; 
+import image2 from './images/HoverGlasses2.jpg';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <main>
+        <HoverImage
+          image1={image1}
+          image2={image2}
+          altText="Hover to change image"
+        />
+        <ProductList />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
