@@ -4,6 +4,10 @@ import HoverImage from './components/HoverImage';
 import ProductList from './components/ProductList';
 import Footer from './components/Footer';
 import './App.css';
+import NavBar from "./components/navbar"
+import Footer from "./components/footer"
+import Signup from "./components/signup"
+
 
 import image1 from './images/HoverGlasses1.jpg'; 
 import image2 from './images/HoverGlasses2.jpg';
@@ -24,5 +28,15 @@ const App = () => {
     </div>
   );
 };
+    <div className="App">
+      <header className="App-header">
+        <NavBar />
+        <Footer />
+        <Signup />
+      </header>
+    </div>
+  );
+
+}
 
 export default App;
