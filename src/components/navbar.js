@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
-import './navbar.css'; // CSS file for styling
+// src/components/Navbar.js
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css'; // Ensure you have the correct path to your CSS file
 
 const Navbar = () => {
-  const [active, setActive] = useState('home'); // State to manage active link
-
-  const handleClick = (section) => {
-    setActive(section); // Update active state based on clicked link
-  };
-
   return (
     <nav className="navbar">
       {/* Left side: Logo */}
@@ -17,31 +13,31 @@ const Navbar = () => {
 
       {/* Middle: Navigation Links */}
       <ul className="nav-menu">
-        <li className={`nav-item ${active === 'home' ? 'active' : ''}`}>
-          <a href="#home" className="nav-link" onClick={() => handleClick('home')}>
+        <li className="nav-item">
+          <Link to="/" className="nav-link">
             Home
-          </a>
+          </Link>
         </li>
-        <li className={`nav-item ${active === 'about' ? 'active' : ''}`}>
-          <a href="#about" className="nav-link" onClick={() => handleClick('about')}>
+        <li className="nav-item">
+          <Link to="/about" className="nav-link">
             About
-          </a>
+          </Link>
         </li>
-        <li className={`nav-item ${active === 'products' ? 'active' : ''}`}>
-          <a href="#products" className="nav-link" onClick={() => handleClick('products')}>
+        <li className="nav-item">
+          <Link to="/products" className="nav-link">
             Products
-          </a>
+          </Link>
         </li>
       </ul>
 
       {/* Right side: Login and Sign Up */}
       <div className="navbar-right">
-        <a href="#login" className="nav-link">
+        <Link to="/login" className="nav-link">
           Login
-        </a>
-        <a href="#signup" className="nav-link">
+        </Link>
+        <Link to="/signup" className="nav-link">
           Sign Up
-        </a>
+        </Link>
       </div>
     </nav>
   );

@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .App-link {
@@ -35,8 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.css-fix {
-  white-space: pre-wrap; /* or pre-line */
 }
