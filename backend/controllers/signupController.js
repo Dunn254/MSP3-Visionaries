@@ -5,8 +5,8 @@ const jwt = require('jsonwebtoken');
 exports.signup = async (req, res) => {
   try {
     const { name, email, password } = req.body;
-    const role="admin";
-    const status="active";
+    const role = "client";
+    const status = "active";
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
@@ -29,8 +29,17 @@ exports.signup = async (req, res) => {
       expiresIn: '1h',
     });
 
-    res.status(201).json({ token });
+    return res.status(201).json({ message: 'signup successful' });
   } catch (error) {
-    res.status(500).json({ message: 'Server error' });
+    console.error('Server error:', error); // Log the error for debugging
+
+    // Send a detailed error message in development mode
+    if (process.env.NODE_ENV === 'development') {
+      res.status(500).json({ message: 'Server error', error: error.message });
+    } else {
+      // Send a generic error message in production
+      res.status(500).json({ message: 'Internal server error' });
+    }
   }
 };
+
