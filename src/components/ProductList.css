@@ -1,0 +1,11 @@
+.card {
+    border: none;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #888;
+  }
