@@ -1,42 +1,32 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import HoverImage from './components/HoverImage';
-import ProductList from './components/ProductList';
-import Footer from './components/Footer';
-import './App.css';
-import NavBar from "./components/navbar"
-import Footer from "./components/footer"
-import Signup from "./components/signup"
-
-
-import image1 from './images/HoverGlasses1.jpg'; 
-import image2 from './images/HoverGlasses2.jpg';
-
-const App = () => {
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css'; // Ensure this is imported if you have global styles
+import NavBar from './components/Navbar'; // Import the NavBar component
+import Footer from './components/Footer'; // Import the Footer component
+import Signup from './components/signup'; // Import the SignUp component
+import Login from './components/login'; // Import the Login component
+import ProductList from './components/ProductList'; 
+import About from './components/About'
+import Home from './components/Home'
+function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <main>
-        <HoverImage
-          image1={image1}
-          image2={image2}
-          altText="Hover to change image"
-        />
-        <ProductList />
-      </main>
-      <Footer />
-    </div>
-  );
-};
-    <div className="App">
-      <header className="App-header">
+    <Router>
+      <div className="App">
         <NavBar />
+        <div className="main-content">
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<ProductList />} />
+            <Route path="/" element={<Home />} /> 
+    
+          </Routes>
+        </div>
         <Footer />
-        <Signup />
-      </header>
-    </div>
+      </div>
+    </Router>
   );
-
 }
 
 export default App;
