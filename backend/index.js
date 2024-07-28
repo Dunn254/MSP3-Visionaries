@@ -4,8 +4,11 @@ const productRoutes = require('./routes/productRoutes');
 const userRoutes = require('./routes/userRoutes');
 const config = require('./config/config');
 const errorHandler = require('./middleware/errorMiddleware');
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors());
 
 // Connect to database
 connectDB();
