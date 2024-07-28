@@ -1,5 +1,7 @@
 import React from 'react';
 import './MainSection.css';
+import image1 from '../images/AI-1.jpg';
+import image2 from '../images/AI-2.jpg';
 
 const MainSection = () => {
   return (
@@ -8,7 +10,7 @@ const MainSection = () => {
         
         <div className="row text-section">
           <div className="col-md-4 mb-4">
-            <img src="https://via.placeholder.com/150" alt="Placeholder" className="img-fluid mb-3" />
+            <img src={image1} alt="AI-1" className="img-fluid mb-3" />
           </div>
           <div className="col-md-8">
             <h2>Text Section</h2>
@@ -23,7 +25,7 @@ const MainSection = () => {
             <p>Quisque consequat libero id magna porttitor, ac auctor nisl fermentum. Duis bibendum dictum nisi, nec tempor felis pulvinar nec. Integer non dictum lacus. Maecenas id dui eu odio tincidunt consectetur et et erat.</p>
           </div>
           <div className="col-md-4 mb-4">
-            <img src="https://via.placeholder.com/150" alt="Placeholder" className="img-fluid mb-3" />
+            <img src={image2} alt="AI-2" className="img-fluid mb-3" />
           </div>
         </div>
       </div>

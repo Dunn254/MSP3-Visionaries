@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css'; // Ensure you have the correct path to your CSS file
+import Logo from '../images/MainLogo.png';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Left side: Logo */}
       <div className="navbar-left">
-        <img src="/src/images/MainLogo.png" alt="Logo" className="logo" />
+        <img src={Logo} alt="Logo" className="logo" />
       </div>
 
       {/* Middle: Navigation Links */}
