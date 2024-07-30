@@ -2,7 +2,7 @@
     position: relative;
     text-align: center;
     color: white;
-    background-color: #f8f9fa; /* Existing background color */
+    background-color: #f8f9fa; 
     background: url('/public/images/main.jpg') no-repeat center center;
     background-size: cover;
   }
@@ -14,8 +14,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: inherit; /* Inherit the background image */
-    opacity: 0.6; /* Adjust opacity as needed */
+    background: inherit; 
+    opacity: 0.6; 
     z-index: 0;
   }
   

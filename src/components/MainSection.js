@@ -13,16 +13,16 @@ const MainSection = () => {
             <img src={image1} alt="AI-1" className="img-fluid mb-3" />
           </div>
           <div className="col-md-8">
-            <h2>Text Section</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae turpis nec sapien bibendum tincidunt. Sed lacinia turpis a ligula malesuada, quis interdum urna venenatis. Suspendisse potenti.</p>
-            <p>Quisque consequat libero id magna porttitor, ac auctor nisl fermentum. Duis bibendum dictum nisi, nec tempor felis pulvinar nec. Integer non dictum lacus. Maecenas id dui eu odio tincidunt consectetur et et erat.</p>
+            <h2>Best Glasses</h2>
+            <p>Discover the finest glasses with superior quality and trendy designs. Our collection offers unparalleled comfort and style, ensuring you see and look your best every day. Elevate your eyewear game with our premium selection.</p>
+            <p>Shop our best glasses for ultimate clarity and style. Experience unmatched comfort and elegant designs tailored for you.</p>
           </div>
         </div>
         <div className="row text-section">
           <div className="col-md-8">
-            <h2>Text Section</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae turpis nec sapien bibendum tincidunt. Sed lacinia turpis a ligula malesuada, quis interdum urna venenatis. Suspendisse potenti.</p>
-            <p>Quisque consequat libero id magna porttitor, ac auctor nisl fermentum. Duis bibendum dictum nisi, nec tempor felis pulvinar nec. Integer non dictum lacus. Maecenas id dui eu odio tincidunt consectetur et et erat.</p>
+            <h2>New Arrivals</h2>
+            <p>Explore our new arrival glasses with trendy styles and superior comfort. Stay ahead of the fashion curve with the latest designs crafted just for you.</p>
+            <p>Discover our new arrival glasses collection, blending modern style with exceptional comfort. Perfect for updating your look.</p>
           </div>
           <div className="col-md-4 mb-4">
             <img src={image2} alt="AI-2" className="img-fluid mb-3" />
