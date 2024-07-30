@@ -1,15 +1,13 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'; // Ensure this is imported if you have global styles
 import NavBar from './components/navbar'; // Import the NavBar component
-import Footer from './components/Footer'; // Import the Footer component
+import Footer from './components/footer'; // Import the Footer component
 import Signup from './components/signup'; // Import the SignUp component
 import Login from './components/login'; // Import the Login component
-import ProductList from './components/ProductList'; 
-import About from './components/About'
-import Home from './components/Home'
-import './index.css'; // Ensure this file exists
-import reportWebVitals from './reportWebVitals';
+import Products from './components/product';// Import the Products component
+
 function App() {
   return (
     <Router>
@@ -19,10 +17,9 @@ function App() {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/products" element={<ProductList />} />
-            <Route path="/" element={<Home />} /> 
-    
+            {/* You can add a default route or a home route if needed */}
+            <Route path="/" element={<Login />} /> {/* Default route */}
+            <Route path="/Products" element={<Products />} />
           </Routes>
         </div>
         <Footer />
