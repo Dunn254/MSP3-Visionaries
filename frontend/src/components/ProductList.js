@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Product from './Product'
+import Product from './product'
 import './ProductList.css';
 import image3 from '../images/HUD-1.jpg';
 import image4 from '../images/HUD-2.jpg';
