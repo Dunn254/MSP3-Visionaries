@@ -8,7 +8,7 @@ We are working on an ecommerce app. It features eye-wear and we envisioned being
 
 There is 4 of us. 2 working on the frontend and 2 on the backend.We separated the frontend and backend. For the frontend, we have William Rodriguez(Williiamdr) and Van Hoang(vhoang001). For the backend, we have Marshall(M1lorhan) and Brian Edwards(Dunn254). 
 
-We are using react, node, mongo, and sql 
+We are using react, node, mongo, and express
 
 we have two components:
 -Admin-which stores the admin dashboard files to manage products, orders and users.

@@ -31,7 +31,7 @@ const ProductList = () => {
                   <Card.Body className="d-flex flex-column">
                     <Card.Title>{product.title}</Card.Title>
                     <Card.Text className="text-muted">{product.price}</Card.Text>
-                    <Button variant="primary" className="mt-auto">Buy Now</Button>
+                    <Button variant="primary" className="mt-auto" onClick={handleAddToCart}>Buy Now</Button>
                   </Card.Body>
                 </Card>
               </Col>
