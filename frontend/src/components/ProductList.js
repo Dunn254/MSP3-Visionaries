@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Button, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import Product from './Product'
 import './ProductList.css';
 import image3 from '../images/HUD-1.jpg';
 import image4 from '../images/HUD-2.jpg';
@@ -10,12 +11,12 @@ import image8 from '../images/HoverGlasses1.jpg';
 
 const ProductList = () => {
   const products = [
-    { id: 1, title: 'Product 1', price: '$10', image: image3 },
-    { id: 2, title: 'Product 2', price: '$20', image: image4 },
-    { id: 3, title: 'Product 3', price: '$30', image: image5 },
-    { id: 4, title: 'Product 4', price: '$40', image: image6 },
-    { id: 5, title: 'Product 5', price: '$50', image: image7 },
-    { id: 6, title: 'Product 6', price: '$60', image: image8 },
+    { id: 1, title: 'Aviator Glasses', price: '$10', image: image3 },
+    { id: 2, title: 'Round Glasses', price: '$20', image: image4 },
+    { id: 3, title: 'Wayfarer Glasses', price: '$30', image: image5 },
+    { id: 4, title: 'Cat-eye Glasses', price: '$40', image: image6 },
+    { id: 5, title: 'Square Glasses', price: '$50', image: image7 },
+    { id: 6, title: 'Rimless Glasses', price: '$60', image: image8 },
   ];
 
   return (
@@ -26,14 +27,7 @@ const ProductList = () => {
           <Row>
             {products.map(product => (
               <Col key={product.id} sm={12} md={6} className="mb-4">
-                <Card className="product-card h-100">
-                  <Card.Img variant="top" src={product.image} className="product-image" />
-                  <Card.Body className="d-flex flex-column">
-                    <Card.Title>{product.title}</Card.Title>
-                    <Card.Text className="text-muted">{product.price}</Card.Text>
-                    <Button variant="primary" className="mt-auto" onClick={handleAddToCart}>Buy Now</Button>
-                  </Card.Body>
-                </Card>
+                <Product product={product} />
               </Col>
             ))}
           </Row>
