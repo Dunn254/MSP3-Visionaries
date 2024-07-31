@@ -11,7 +11,6 @@ const Cart = () => {
         <button>Check out</button>
       </div>
     );
-  };
-  
+  }
   export default Cart;
   
